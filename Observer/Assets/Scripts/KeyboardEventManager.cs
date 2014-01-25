@@ -118,8 +118,9 @@ using System.Collections.Generic;
         protected void Update()
         {
 
-            InteractKeyPress = Input.GetKeyDown(InteractKey) && _InteractKeyPressPrev;
+            InteractKeyPress = Input.GetKeyDown(InteractKey);// && _InteractKeyPressPrev;
             _InteractKeyPressPrev = Input.GetKeyUp(InteractKey);
+
             foreach (KeyCode key in _keys)
             {
                 if (Input.GetKeyDown(key))
