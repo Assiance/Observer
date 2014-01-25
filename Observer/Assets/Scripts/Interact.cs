@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
-using Assets.Scripts.MyGenericScripts.IO;
+
 
 public class Interact : MonoBehaviour {
 
