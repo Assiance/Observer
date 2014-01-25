@@ -38,7 +38,7 @@ public class SceneManager : MonoBehaviour
 
     #endregion
 
-    public int Karma { get; set; }
+    public int Karma = 0;
 
     private void Init()
     {

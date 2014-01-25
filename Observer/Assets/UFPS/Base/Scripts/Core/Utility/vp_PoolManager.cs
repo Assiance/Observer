@@ -208,7 +208,8 @@ public class vp_PoolManager : MonoBehaviour
     	AddObjects(original, position, rotation);
 		
 		// return the new object by calling this method again
-		return this.Instantiate(original, position, rotation);
+        //we changed this Brad Hill this.Instantiate
+		return Instantiate(original, position, rotation);
     
     }
     
