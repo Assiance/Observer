@@ -12,3 +12,5 @@ _ReSharper.*
 *.resharper
 Assets/-tk2d
 Assets/Resources/tk2d/*
+Observer/Observer.sln
+Observer/Observer-csharp.sln
