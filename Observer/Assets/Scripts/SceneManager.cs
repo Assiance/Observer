@@ -1,46 +1,48 @@
 ﻿using UnityEngine;
-using System.Collections;
 
-public class SceneManager : MonoBehaviour 
+namespace Assets.Scripts
 {
-    #region Singleton
-
-    private static SceneManager _instance;
-
-    public static SceneManager Instance
+    public class SceneManager : MonoBehaviour 
     {
-        get
+        #region Singleton
+
+        private static SceneManager _instance;
+
+        public static SceneManager Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = FindObjectOfType(typeof(SceneManager)) as SceneManager;
+
+                    if (_instance == null)
+                    {
+                        _instance = new GameObject("SceneManager Temporary Instance", typeof(SceneManager)).GetComponent<SceneManager>();
+                    }
+
+                    _instance.Init();
+                }
+
+                return _instance;
+            }
+        }
+
+        protected void Awake()
         {
             if (_instance == null)
             {
-                _instance = FindObjectOfType(typeof(SceneManager)) as SceneManager;
-
-                if (_instance == null)
-                {
-                    _instance = new GameObject("SceneManager Temporary Instance", typeof(SceneManager)).GetComponent<SceneManager>();
-                }
-
+                _instance = this;
                 _instance.Init();
             }
-
-            return _instance;
         }
-    }
 
-    protected void Awake()
-    {
-        if (_instance == null)
+        #endregion
+
+        public int Karma { get; set; }
+
+        private void Init()
         {
-            _instance = this;
-            _instance.Init();
         }
-    }
-
-    #endregion
-
-    public int Karma { get; set; }
-
-    private void Init()
-    {
     }
 }
