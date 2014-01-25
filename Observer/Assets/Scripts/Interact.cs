@@ -5,11 +5,15 @@ using System.Collections;
 public class Interact : MonoBehaviour {
 
 	//Used to detect interaction through collision
+    private bool inColl = false;
 
-    void OnCollisionEnter(Collision coll)
+
+    void OnTriggerStay(Collider coll)
     {
-        if ( KeyboardEventManager.InteractKeyPress && coll.gameObject.tag == "Interactable" )
+        Debug.Log("blue flag");
+        if (coll.gameObject.tag == "Interactable" && KeyboardEventManager.InteractKeyPress)
         {
+            Debug.Log("red flag");
             if (coll.gameObject.GetComponent(typeof(Readable)) != null)
             {
                 Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));

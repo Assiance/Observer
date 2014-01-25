@@ -7,7 +7,7 @@ public class Readable : MonoBehaviour {
     public Texture backText;
     private Rect textWindow;
 
-    private bool windowOpen = true;
+    private bool windowOpen = false;
 
     void OnEnable()
     {
