@@ -1,8 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-namespace Assets.Scripts
-{
+
     public delegate void KeyEvent(KeyCode keyCode);
 
     public class KeyboardEventManager : MonoBehaviour
@@ -17,11 +16,11 @@ namespace Assets.Scripts
             {
                 if (_instance == null)
                 {
-                    _instance = FindObjectOfType(typeof (KeyboardEventManager)) as KeyboardEventManager;
+                    _instance = FindObjectOfType(typeof(KeyboardEventManager)) as KeyboardEventManager;
 
                     if (_instance == null)
                     {
-                        _instance = new GameObject("KeyboardEventManager Temporary Instance", typeof (KeyboardEventManager)).GetComponent<KeyboardEventManager>();
+                        _instance = new GameObject("KeyboardEventManager Temporary Instance", typeof(KeyboardEventManager)).GetComponent<KeyboardEventManager>();
                     }
 
                     _instance.Init();
@@ -152,5 +151,4 @@ namespace Assets.Scripts
         }
 
         #endregion
-    }
 }
