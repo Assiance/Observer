@@ -1,11 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-namespace Assets.Scripts.MyGenericScripts.IO
+namespace Assets.Scripts
 {
     public delegate void KeyEvent(KeyCode keyCode);
-
-
 
     public class KeyboardEventManager : MonoBehaviour
     {

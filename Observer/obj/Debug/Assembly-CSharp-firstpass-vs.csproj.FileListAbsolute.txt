@@ -8,3 +8,4 @@ C:\Users\Bradford\Desktop\GGJ\Observer\Observer\Temp\bin\Debug\Unity.DataContrac
 C:\Users\Bradford\Desktop\GGJ\Observer\Observer\Temp\bin\Debug\ICSharpCode.NRefactory.dll
 C:\Users\Bradford\Desktop\GGJ\Observer\Observer\obj\Debug\Assembly-CSharp-firstpass.dll
 C:\Users\Bradford\Desktop\GGJ\Observer\Observer\obj\Debug\Assembly-CSharp-firstpass.pdb
+C:\Users\Bradford\Desktop\GGJ\Observer\Observer\obj\Debug\Assembly-CSharp-firstpass-vs.csprojResolveAssemblyReference.cache
