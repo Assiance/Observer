@@ -46,6 +46,8 @@ namespace Assets.Scripts.MyGenericScripts.IO
 
 
         public static bool InteractKeyPress = false;
+        private static bool _InteractKeyPressPrev = false;
+
         public const KeyCode InteractKey = KeyCode.E;
 
         private List<KeyCode> _keys;
@@ -118,7 +120,9 @@ namespace Assets.Scripts.MyGenericScripts.IO
 
         protected void Update()
         {
-            InteractKeyPress = Input.GetKeyDown(InteractKey);
+
+            InteractKeyPress = Input.GetKeyDown(InteractKey) && _InteractKeyPressPrev;
+            _InteractKeyPressPrev = Input.GetKeyUp(InteractKey);
             foreach (KeyCode key in _keys)
             {
                 if (Input.GetKeyDown(key))
