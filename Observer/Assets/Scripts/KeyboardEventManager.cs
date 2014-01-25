@@ -5,6 +5,8 @@ namespace Assets.Scripts.MyGenericScripts.IO
 {
     public delegate void KeyEvent(KeyCode keyCode);
 
+
+
     public class KeyboardEventManager : MonoBehaviour
     {
         #region Singleton
@@ -41,6 +43,12 @@ namespace Assets.Scripts.MyGenericScripts.IO
         }
 
         #endregion
+
+
+        public static bool InteractKeyPress = false;
+        private static bool _InteractKeyPressPrev = false;
+
+        public const KeyCode InteractKey = KeyCode.E;
 
         private List<KeyCode> _keys;
         private Dictionary<KeyCode, KeyEvent> _keyDownEvents;
@@ -112,6 +120,9 @@ namespace Assets.Scripts.MyGenericScripts.IO
 
         protected void Update()
         {
+
+            InteractKeyPress = Input.GetKeyDown(InteractKey) && _InteractKeyPressPrev;
+            _InteractKeyPressPrev = Input.GetKeyUp(InteractKey);
             foreach (KeyCode key in _keys)
             {
                 if (Input.GetKeyDown(key))
