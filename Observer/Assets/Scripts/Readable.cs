@@ -7,12 +7,13 @@ public class Readable : MonoBehaviour {
     public Texture backText;
     private Rect textWindow;
 
-    private bool windowOpen = true;
+    private bool windowOpen = false;
 
     void OnEnable()
     {
         text = file.ToString();
         textWindow = new Rect(25,25,1024,512);
+        KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Escape, ExitWindow);
     }
 
     void OnGUI()
@@ -24,7 +25,12 @@ public class Readable : MonoBehaviour {
     void displayText(int windID)
     {
         GUI.Label(new Rect(10,30,1004,994), text);
-        if (GUI.Button(new Rect(990, 5, 25, 25), "x"))
+        
+    }
+
+    void ExitWindow(KeyCode key)
+    {
+        if (windowOpen)
         {
             windowOpen = false;
         }
