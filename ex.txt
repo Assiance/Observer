@@ -1,0 +1,20 @@
+KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Space, OnAttack);
+
+protected void OnAttack(KeyCode key)
+        {
+			if (MeleeClip != null)
+				audio.PlayOneShot(MeleeClip);
+
+            foreach (var attackableObjects in _objectsInAttackRange)
+            {
+                var hitComponents = attackableObjects.GetComponents(typeof(IHittable));
+
+                if (hitComponents == null)
+                    return;
+
+                foreach (var hitComponent in hitComponents)
+                {
+                    ((IHittable)hitComponent).Hit(this);
+                }
+            }
+        }
