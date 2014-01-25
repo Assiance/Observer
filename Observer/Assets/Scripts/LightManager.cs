@@ -5,6 +5,7 @@ public class LightManager : MonoBehaviour
 {
     public enum LightKarma { Good, Bad, Neutral }
     public LightKarma currentLightKarma = LightKarma.Neutral;
+    public float FadeTime = 0;
 
     public int BadValue;
     public int GoodValue;
@@ -49,17 +50,27 @@ public class LightManager : MonoBehaviour
         switch (currentLightKarma)
         {
             case LightKarma.Bad:
-                RenderSettings.fogDensity = BadFogDensity;
-                RenderSettings.ambientLight = BadAmbience;
+                StartCoroutine(Fade(RenderSettings.fogDensity, BadFogDensity, RenderSettings.ambientLight, BadAmbience, FadeTime));
                 break;
             case LightKarma.Neutral:
-                RenderSettings.fogDensity = NeutralFogDensity;
-                RenderSettings.ambientLight = NeutralAmbience;
+                StartCoroutine(Fade(RenderSettings.fogDensity, NeutralFogDensity, RenderSettings.ambientLight, NeutralAmbience, FadeTime));
                 break;
             case LightKarma.Good:
-                RenderSettings.fogDensity = GoodFogDensity;
-                RenderSettings.ambientLight = GoodAmbience;
+                StartCoroutine(Fade(RenderSettings.fogDensity, GoodFogDensity, RenderSettings.ambientLight, GoodAmbience, FadeTime));
                 break;
         }
+    }
+
+    IEnumerator Fade(float currentDensity, float targetDensity, Color currentAmbience, Color targetAmbience, float time)
+    {
+        float elapsedTime = 0;
+        while (elapsedTime < time)
+        {
+            RenderSettings.ambientLight = Color.Lerp(currentAmbience, targetAmbience, (elapsedTime / time));
+            RenderSettings.fogDensity = Mathf.Lerp(currentDensity, targetDensity, (elapsedTime / time));
+            elapsedTime += Time.deltaTime;
+            yield return null;
+        }
+
     }
 }
