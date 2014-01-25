@@ -44,6 +44,7 @@ namespace Assets.Scripts.MyGenericScripts.IO
 
         #endregion
 
+
         public static bool InteractKeyPress = false;
         public const KeyCode InteractKey = KeyCode.E;
 
