@@ -1,0 +1,3 @@
+The user interacts with a book titled "Newton's Laws."
+
+"An object in motion remains in motion unless acted upon by an outside force."

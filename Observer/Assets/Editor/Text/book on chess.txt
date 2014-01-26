@@ -1,0 +1,3 @@
+The player interacts with the book titled " chess for beginners."
+
+"The game of chess contains 32 pieces, which consists of eight pawns and eight special pieces."

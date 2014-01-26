@@ -1,0 +1,3 @@
+The user interacts with a computer, which has an open diary entry.
+
+" I woke up to the sound of one of the engineers in the act. I caught the bustard stealing from me in plain sight. Without any hesitation I pulled out my piston and shot him in the back of the head." 

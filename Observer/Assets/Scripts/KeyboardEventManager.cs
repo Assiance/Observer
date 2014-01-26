@@ -47,6 +47,7 @@ using System.Collections.Generic;
 
         public const KeyCode InteractKey = KeyCode.E;
 
+
         private List<KeyCode> _keys;
         private Dictionary<KeyCode, KeyEvent> _keyDownEvents;
         private Dictionary<KeyCode, KeyEvent> _keyUpEvents;

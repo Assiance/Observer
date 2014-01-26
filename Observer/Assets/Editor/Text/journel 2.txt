@@ -1,0 +1,3 @@
+The player interacts with a computer and finds a journal entry.
+
+"This is just ridiculous. We have the power to build weapons of mass destruction, yet we can't secure a decent internet connection. They expect me to work for seventeen hours a day without a decent internet connection... Oh it would appear that I knocked out the internet cable."

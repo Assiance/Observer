@@ -1,0 +1,3 @@
+The user interacts with a book titled "Unsung Melody."
+
+" Stories of the young maiden swept across the land. People began to flock to the orphanage to hear Tabitha sing. Despite her talent, she never uttered a single phrase unless she was singing."

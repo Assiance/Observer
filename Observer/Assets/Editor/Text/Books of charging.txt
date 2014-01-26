@@ -1,0 +1,3 @@
+The player interacts with a book on charging stations.
+
+"All security units have been installed with a 79 volt cubic battery. For optimal performance it is recommended that all units be recharged every eight hours. Failure to recharge can cause a burnout in the cubic battery, which can lead to permit termination of the unit."
