@@ -3,10 +3,10 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public class Readable : VRGUI
+public class Readable : MonoBehaviour
 {
 
-    public static OVRGUI OvrGUI = new OVRGUI();
+    public RenderTexture myTexture;
 
     public TextAsset file;
     private string text;
@@ -18,7 +18,7 @@ public class Readable : VRGUI
     public string hoverText;
 
     private bool displayHover = false;
-    private bool windowOpen = false;
+    public  bool windowOpen = false;
     private bool toBeBurned = false;
     private AudioSource speaker;
 
@@ -26,7 +26,7 @@ public class Readable : VRGUI
     private Camera RightCamera;
     private const float CameraWidth = 379.5f;
 
-    protected new void OnEnable()
+    protected void OnEnable()
     {
         var cameras = SceneManager.Instance.PlayerOVRCamera.GetComponentsInChildren<Camera>().ToList();
         LeftCamera = cameras[0];
@@ -35,38 +35,40 @@ public class Readable : VRGUI
         speaker = this.GetComponent<AudioSource>();
         text = file.ToString();
         textWindow = new Rect(30,100,300,200);
-        KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Escape, ExitWindow);
-        base.OnEnable();
-        if (base.guiRenderPlane != null)
-        {
-            base.guiRenderPlane.SetActive(true);
-        }
+        //KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Escape, ExitWindow);
+        
+        
     }
 
-    public override void OnVRGUI()
+    public void DNUOnGUIDNU()
     {
-     
+        RenderTexture.active = myTexture;
+        GL.Clear(false, true, new Color(0.0f, 0.0f, 0.0f, 0.0f));
         if (windowOpen)
         {
             GUI.Window(0, new Rect(100, 200,300,200), displayText, "Read Me");
             //GUI.Window(1, new Rect(100 + CameraWidth, 200, 300, 200), displayText, "Read Me");
         }
 
-        if (!windowOpen && toBeBurned)
-        {
-            speaker.PlayOneShot(putdown);
-            Destroy(this);
-        }
+        
 
         if (displayHover)
         {
             //print(LeftCamera.camera.pixelRect);
             //print(RightCamera.camera.pixelRect);
             //OvrGUI.StereoDrawTexture(50, 50, .1f, .1f, RenderTexture.active, Color.white);
-            GUI.Label(new Rect(140, 30, 100, 100), hoverText);
+            GUI.Label(new Rect(0, 0, 100, 100), hoverText);
             //GUI.Label(new Rect(140 + CameraWidth, 300, 100, 100), hoverText);
 
         }
+        if (!windowOpen && toBeBurned)
+        {
+            speaker.PlayOneShot(putdown);
+            GL.Clear(false, true, new Color(0.0f, 0.0f, 0.0f, 0.0f));
+            myTexture.DiscardContents();
+            Destroy(this);
+        }
+        RenderTexture.active = null;
         
     }
 
@@ -100,6 +102,7 @@ public class Readable : VRGUI
 
     public void hideHoverText()
     {
+        
         displayHover = false;
     }
 }

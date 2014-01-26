@@ -4,7 +4,7 @@ using System.Collections;
 public abstract class VRGUI : MonoBehaviour 
 {
 	public Vector3 guiPosition      = new Vector3(0f, 0f, 1f);
-	public float   guiSize          = 1f;
+	public float   guiSize          = 2f;
 	public bool    useCurvedSurface = true;
 	public bool    acceptMouse      = true;
 	public bool    acceptKeyboard   = true;
@@ -47,7 +47,7 @@ public abstract class VRGUI : MonoBehaviour
 		// assign the render texture to the render plane
 		guiRenderPlane.renderer.material.mainTexture = guiRenderTexture;
 		
-		if (acceptMouse)
+		if (acceptMouse  && false)
 		{
 			// create the cursor
 			if (customCursor != null)
