@@ -1,0 +1,3 @@
+The player interacts with a book on gunpowder.
+
+" Gunpowder is a mixture of potassium nitrate, carbon, and sulfur—involves an oxidation-reduction reaction, with the potassium nitrate being reduced and the carbon and sulfur being oxidized. In this instance, there is usually an explosion."

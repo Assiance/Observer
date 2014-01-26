@@ -1,0 +1,3 @@
+The player interacts with a computer screen with an email attached.
+
+" Hey Johnson could you place an order with one of the technicians. Our E.V.E.E charging station has been unresponsive. Claudia believes the problem is with the flux capacitor and I believe it's not our job to try and fix these types of things. Thanks in advance."

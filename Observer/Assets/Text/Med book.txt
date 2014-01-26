@@ -1,0 +1,3 @@
+The player interacts with a medical book.
+
+"The main function of bones is to provide a skeletal frame for the body. Human bones also stores calcium as reserves."

@@ -1,0 +1,3 @@
+The user interacts with a book titled "Periodic Table: Guide to elements."
+
+"The element Cobalt is listed as Co and its periodic classification is metallic. Cobalt is generally a brittle, hard, silver - grey transition metal with magnetic properties slimier to thoese found in iron."

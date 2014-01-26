@@ -1,0 +1,3 @@
+The user interacts with a book titled " Beginners guide to Chemistry."
+
+" Chemistry is the study of matter and energy and the interactions between them. It is a physical science that is closely related to physics, which often shares the same definition."

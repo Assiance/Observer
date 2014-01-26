@@ -1,0 +1,3 @@
+The user interacts with a book titled "Newton's Law vol. 2"
+
+"The relationship between an objects mass its acceleration and the applied force F is F = ma. Acceleration and force are vectors; in this law the direction of the force vector is the same as the direction of the acceleration vector."
