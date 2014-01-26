@@ -1,0 +1,7 @@
+You happen to see a robot, similar to you in the hall. 
+
+He has a thing called a battery, which you may desperatly need. 
+
+He also appears to be repairable.
+
+Go to the salvage center to claim his battery, go to the repair station to fix him. 
