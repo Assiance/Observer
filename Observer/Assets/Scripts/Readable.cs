@@ -22,6 +22,7 @@ public class Readable : MonoBehaviour
 
     private Camera LeftCamera;
     private Camera RightCamera;
+    private const float CameraWidth = 379.5f;
 
     void OnEnable()
     {
@@ -31,14 +32,17 @@ public class Readable : MonoBehaviour
 
         speaker = this.GetComponent<AudioSource>();
         text = file.ToString();
-        textWindow = new Rect(25,25,1024,512);
+        textWindow = new Rect(30,100,300,200);
         KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Escape, ExitWindow);
     }
 
     void OnGUI()
     {
         if (windowOpen)
-            GUI.Window(0, textWindow, displayText, "Read Me");
+        {
+            GUI.Window(0, new Rect(30, 100,300,200), displayText, "Read Me");
+            GUI.Window(1, new Rect(30 + CameraWidth, 100, 300, 200), displayText, "Read Me");
+        }
 
         if (!windowOpen && toBeBurned)
         {
@@ -48,9 +52,10 @@ public class Readable : MonoBehaviour
 
         if (displayHover)
         {
-            Debug.Log(LeftCamera.camera.pixelRect);
-            Debug.Log(RightCamera.camera.pixelRect);
-            GUI.Label(new Rect(25, 500, 500, 25), hoverText);
+            print(LeftCamera.camera.pixelRect);
+            print(RightCamera.camera.pixelRect);
+            GUI.Label(new Rect(70, 200, 100, 100), hoverText);
+            GUI.Label(new Rect(70 + CameraWidth, 200, 100, 100), hoverText);
 
         }
     }
