@@ -39,7 +39,7 @@ public class FreezeObjectsEvent : MonoBehaviour
         {
             Random.seed = count;
             bodies.velocity = new Vector3(Random.Range(-.3f, .2f), Random.Range(-.3f, .2f), Random.Range(-.3f, .2f));
-            bodies.angularVelocity = new Vector3(Random.Range(-.2f, .2f), Random.Range(-.2f, .2f), Random.Range(-.2f, .2f));
+            bodies.angularVelocity = new Vector3(Random.Range(-.1f, .1f), Random.Range(-.1f, .1f), Random.Range(-.1f, .1f));
             count++;
         }
     }
