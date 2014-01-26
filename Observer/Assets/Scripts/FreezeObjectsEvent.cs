@@ -17,7 +17,7 @@ public class FreezeObjectsEvent : MonoBehaviour
 
     public void Start()
     {
-        foreach (var bodies in RigidBodies)
+        foreach (var bodies in RigidBodies.Where(i => i.tag == "movable"))
         {
             bodies.isKinematic = true;
         }
@@ -27,20 +27,19 @@ public class FreezeObjectsEvent : MonoBehaviour
 
     IEnumerator FreezeEvent()
     {
-        foreach (var bodies in RigidBodies)
+        foreach (var bodies in RigidBodies.Where(i => i.tag == "movable"))
         {
             bodies.isKinematic = false;
         }
 
         int count = 1;
-        yield return new WaitForSeconds(4);
-        
-        foreach (var bodies in RigidBodies)
+        yield return new WaitForSeconds(1);
+
+        foreach (var bodies in RigidBodies.Where(i => i.tag == "movable"))
         {
             Random.seed = count;
-            bodies.velocity = new Vector3(Random.Range(-5, 5), Random.Range(-5, 5), Random.Range(-5, 5));
-            print(bodies.velocity);
-            bodies.angularVelocity = new Vector3(Random.Range(-3, 3), Random.Range(-3, 3), Random.Range(-3, 3));
+            bodies.velocity = new Vector3(Random.Range(-.3f, .2f), Random.Range(-.3f, .2f), Random.Range(-.3f, .2f));
+            bodies.angularVelocity = new Vector3(Random.Range(-.2f, .2f), Random.Range(-.2f, .2f), Random.Range(-.2f, .2f));
             count++;
         }
     }
