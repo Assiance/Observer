@@ -40,8 +40,8 @@ public class Readable : MonoBehaviour
     {
         if (windowOpen)
         {
-            GUI.Window(0, new Rect(30, 100,300,200), displayText, "Read Me");
-            GUI.Window(1, new Rect(30 + CameraWidth, 100, 300, 200), displayText, "Read Me");
+            GUI.Window(0, new Rect(100, 200,300,200), displayText, "Read Me");
+            GUI.Window(1, new Rect(100 + CameraWidth, 200, 300, 200), displayText, "Read Me");
         }
 
         if (!windowOpen && toBeBurned)
@@ -54,8 +54,8 @@ public class Readable : MonoBehaviour
         {
             print(LeftCamera.camera.pixelRect);
             print(RightCamera.camera.pixelRect);
-            GUI.Label(new Rect(70, 200, 100, 100), hoverText);
-            GUI.Label(new Rect(70 + CameraWidth, 200, 100, 100), hoverText);
+            GUI.Label(new Rect(140, 300, 100, 100), hoverText);
+            GUI.Label(new Rect(140 + CameraWidth, 300, 100, 100), hoverText);
 
         }
     }
