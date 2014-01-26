@@ -2,40 +2,46 @@
 using System.Collections;
 
 
-public class Interact : MonoBehaviour {
+public class Interact : MonoBehaviour
+{
 
-	//Used to detect interaction through collision
+    //Used to detect interaction through collision
     private bool inColl = false;
 
     void OnTriggerEnter(Collider coll)
     {
-      checkInteract(coll);
+        if (coll.gameObject.tag == "Interactable")
+        {
+            if (coll.gameObject.GetComponent(typeof(Readable)) != null)
+            {
+                Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
+                contact.showHoverText();
+            }
+        }
     }
 
     void OnTriggerStay(Collider coll)
     {
-      checkInteract(coll);
+
+        if (coll.gameObject.tag == "Interactable" && KeyboardEventManager.InteractKeyPress)
+        {
+            if (coll.gameObject.GetComponent(typeof(Readable)) != null)
+            {
+                Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
+                contact.interact();
+            }
+        }
     }
 
     void OnTriggerExit(Collider coll)
     {
-      checkInteract(coll);
-    }
-
-    void checkInteract(Collider coll)
-    {
-      if (coll.gameObject.tag == "Interactable")
-      {
-
-
-        if (coll.gameObject.GetComponent(typeof(Readable)) != null)
+        if (coll.gameObject.tag == "Interactable")
         {
-          Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
-          contact.showHoverText();
+            if (coll.gameObject.GetComponent(typeof(Readable)) != null)
+            {
+                Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
+                contact.hideHoverText();
+            }
         }
-
-
-
-      }
     }
 }

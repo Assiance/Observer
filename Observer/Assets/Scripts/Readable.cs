@@ -1,9 +1,11 @@
-﻿using UnityEngine;
+﻿using System.Linq;
+using UnityEngine;
 using System.Collections;
 
- [RequireComponent(typeof(AudioSource))]
-public class Readable : MonoBehaviour {
-   
+[RequireComponent(typeof(AudioSource))]
+public class Readable : MonoBehaviour
+{
+
     public TextAsset file;
     private string text;
     public Texture backText;
@@ -18,8 +20,15 @@ public class Readable : MonoBehaviour {
     private bool toBeBurned = false;
     private AudioSource speaker;
 
+    private Camera LeftCamera;
+    private Camera RightCamera;
+
     void OnEnable()
     {
+        var cameras = SceneManager.Instance.PlayerOVRCamera.GetComponentsInChildren<Camera>().ToList();
+        LeftCamera = cameras[0];
+        RightCamera = cameras[1];
+
         speaker = this.GetComponent<AudioSource>();
         text = file.ToString();
         textWindow = new Rect(25,25,1024,512);
@@ -28,8 +37,8 @@ public class Readable : MonoBehaviour {
 
     void OnGUI()
     {
-        if(windowOpen)
-        textWindow = GUI.Window(0, textWindow, displayText, "Read Me");
+        if (windowOpen)
+            GUI.Window(0, textWindow, displayText, "Read Me");
 
         if (!windowOpen && toBeBurned)
         {
@@ -39,14 +48,17 @@ public class Readable : MonoBehaviour {
 
         if (displayHover)
         {
+            Debug.Log(LeftCamera.camera.pixelRect);
+            Debug.Log(RightCamera.camera.pixelRect);
             GUI.Label(new Rect(25, 500, 500, 25), hoverText);
+
         }
     }
 
     void displayText(int windID)
     {
-        GUI.Label(new Rect(10,30,1004,994), text);
-        
+        GUI.Label(new Rect(10, 30, 1004, 994), text);
+
     }
 
     void ExitWindow(KeyCode key)
