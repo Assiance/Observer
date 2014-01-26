@@ -1,26 +1,41 @@
+# Unity generated #
+# =============== #
+Observer/Temp/
+Observer/Obj/
+Observer/UnityGenerated/
+Observer/Library/
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+Observer/ExportedObj/
+*.svd
+*.userprefs
 *.csproj
 *.pidb
-*.userprefs
 *.suo
+*.sln
 *.user
+*.unityproj
+*.booproj
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
 *.cache
 *.Cache
-Library
-Temp
-Observer/obj/Debug/UnityVS.Observer.CSharp.csproj.FileListAbsolute.txt
-_ReSharper.*
 *.resharper
+.DS_Store
+
+_ReSharper.*
 Assets/-tk2d
-Assets/Resources/tk2d/*
-Observer/Observer.sln
-Observer/Observer-csharp.sln
-4Observer/obj/Debug/Assembly-CSharp-vs.csproj.FileListAbsolute.txt
-Observer/obj/Debug/Assembly-CSharp-firstpass-vs.csproj.FileListAbsolute.txt
-Observer/Observer.sln
-Observer/Observer-csharp.sln
-Observer/obj/Debug/Assembly-CSharp-firstpass.pdb
-Observer/obj/Debug/Assembly-CSharp-firstpass.dll
-Observer/obj/Debug/Assembly-CSharp.pdb
-Observer/obj/Debug/Assembly-CSharp.dll
-Observer/Observer.sln
-Observer/Observer-csharp.sln
+Assets/Resources/tk2d
