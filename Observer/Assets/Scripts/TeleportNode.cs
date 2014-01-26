@@ -59,7 +59,7 @@ public class TeleportNode : MonoBehaviour
             {
                 Random.seed = count;
                 bodies.velocity = new Vector3(Random.Range(-.3f, .2f), Random.Range(-.3f, .2f), Random.Range(-.3f, .2f));
-                bodies.angularVelocity = new Vector3(Random.Range(-.1f, .1f), Random.Range(-.1f, .1f), Random.Range(-.1f, .1f));
+                bodies.angularVelocity = new Vector3(Random.Range(-.4f, .44f), Random.Range(-.4f, .4f), Random.Range(-.4f, .4f));
                 count++;
             }
 
