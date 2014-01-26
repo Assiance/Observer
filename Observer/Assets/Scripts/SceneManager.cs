@@ -39,6 +39,7 @@ public class SceneManager : MonoBehaviour
     #endregion
 
     public int Karma = 0;
+    public GameObject PlayerOVRCamera;
 
     private void Init()
     {
