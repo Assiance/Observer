@@ -31,6 +31,15 @@ public class Interact : MonoBehaviour
                 contact.interact();
             }
         }
+
+        if (coll.gameObject.tag == "PickUp" && KeyboardEventManager.InteractKeyPress)
+        {
+            if (coll.gameObject.GetComponent(typeof(PickupAble)) != null)
+            {
+                PickupAble contact = (PickupAble)coll.gameObject.GetComponent(typeof(PickupAble));
+                contact.interact();
+            }
+        }
     }
 
     void OnTriggerExit(Collider coll)
