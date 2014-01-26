@@ -18,16 +18,21 @@ public abstract class VRGUI : MonoBehaviour
 	
 	private bool isInitialized = false;
 	
-	private void Initialize () 
+	 void Initialize () 
+    {}
+    void Start()
 	{
+        print("Init");
 		// create the render plane
-		if (useCurvedSurface)
+		if (useCurvedSurface && false)
 		{
 			guiRenderPlane = Instantiate(Resources.Load("VRGUICurvedSurface")) as GameObject;
 		}
 		else
 		{
-			guiRenderPlane = Instantiate(Resources.Load("VRGUIFlatSurface")) as GameObject;
+            print("PreIPlane");
+            guiRenderPlane = (GameObject)Instantiate(Resources.Load("VRGUIFlatSurface"));
+            print("IPlane");
 		}
 		
 		// position the render plane
@@ -80,7 +85,7 @@ public abstract class VRGUI : MonoBehaviour
 		{
 			Initialize();
 		}
-		
+        //print("Draw");
 		// handle mouse events
 		if (Event.current.isMouse)
 		{
