@@ -9,53 +9,33 @@ public class Interact : MonoBehaviour {
 
     void OnTriggerEnter(Collider coll)
     {
-        if (coll.gameObject.tag == "Interactable")
-        {
-            
-               
-                if (coll.gameObject.GetComponent(typeof(Readable)) != null)
-                {
-                    Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
-                    contact.showHoverText();
-                }
-            
-
-
-        }
+      checkInteract(coll);
     }
 
     void OnTriggerStay(Collider coll)
     {
-        
-        if (coll.gameObject.tag == "Interactable" && KeyboardEventManager.InteractKeyPress)
-        {
-            
-                
-                if (coll.gameObject.GetComponent(typeof(Readable)) != null)
-                {
-                    Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
-                    contact.interact();
-                }
-            
-
-            
-        }
+      checkInteract(coll);
     }
 
     void OnTriggerExit(Collider coll)
     {
-        if (coll.gameObject.tag == "Interactable")
+      checkInteract(coll);
+    }
+
+    void checkInteract(Collider coll)
+    {
+      if (coll.gameObject.tag == "Interactable")
+      {
+
+
+        if (coll.gameObject.GetComponent(typeof(Readable)) != null)
         {
-
-
-            if (coll.gameObject.GetComponent(typeof(Readable)) != null)
-            {
-                Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
-                contact.hideHoverText();
-            }
-
-
-
+          Readable contact = (Readable)coll.gameObject.GetComponent(typeof(Readable));
+          contact.showHoverText();
         }
+
+
+
+      }
     }
 }
