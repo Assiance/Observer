@@ -40,8 +40,8 @@ public class Readable : MonoBehaviour
     {
         if (windowOpen)
         {
-            GUI.Window(0, new Rect(100, 200,300,200), displayText, "Read Me");
-            GUI.Window(1, new Rect(100 + CameraWidth, 200, 300, 200), displayText, "Read Me");
+            GUI.Window(0, new Rect(210, 200,300,200), displayText, "Read Me");
+            GUI.Window(1, new Rect(210 + CameraWidth, 200, 300, 200), displayText, "Read Me");
         }
 
         if (!windowOpen && toBeBurned)
@@ -62,7 +62,7 @@ public class Readable : MonoBehaviour
 
     void displayText(int windID)
     {
-        GUI.Label(new Rect(10, 30, 1004, 994), text);
+        GUI.Label(new Rect(10, 30, 290, 190), text);
 
     }
 
