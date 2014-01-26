@@ -3,8 +3,7 @@ using UnityEngine;
 
 public class LightManager : MonoBehaviour
 {
-    public enum LightKarma { Good, Bad, Neutral }
-    public LightKarma currentLightKarma = LightKarma.Neutral;
+    
 
     [Range(0,1)]
     public float FadeTime = 0;
