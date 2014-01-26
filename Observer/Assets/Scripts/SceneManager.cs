@@ -40,6 +40,7 @@ public class SceneManager : MonoBehaviour
 
     public int Karma = 0;
     public GameObject PlayerOVRCamera;
+    public GameObject Player;
 
     private void Init()
     {
