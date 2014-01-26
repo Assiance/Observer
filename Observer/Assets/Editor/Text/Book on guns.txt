@@ -1,0 +1,3 @@
+The Player interacts with a gun magazine
+
+"The E84 Yowzler Deadlock rifle is the newest innovation from Genesect industries. The Deadlock is an anti-shield weapon. Capable of firing from 875 yards. Equipped with a biometric sensor and a thermal clip accelerator the Deadlock is able to pierce kinetic shields up to six inches."

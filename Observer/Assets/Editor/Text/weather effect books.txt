@@ -1,0 +1,3 @@
+The user interacts with a book titled "Earth's weather effects."
+
+" Fulgurite is the result of the quartz sand in the ground fusing together after being charged by lightning. It takes temperatures of 1800 degrees Celsius to turn the sand into fulgurite."

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-
+ [RequireComponent(typeof(AudioSource))]
 public class Readable : MonoBehaviour {
-    @RequireComponent AudioSource;
+   
     public TextAsset file;
     private string text;
     public Texture backText;
@@ -11,7 +11,9 @@ public class Readable : MonoBehaviour {
     public int karmaEffect;
     public AudioClip pickup;
     public AudioClip putdown;
+    public string hoverText;
 
+    private bool displayHover = false;
     private bool windowOpen = false;
     private bool toBeBurned = false;
     private AudioSource speaker;
@@ -33,6 +35,11 @@ public class Readable : MonoBehaviour {
         {
             speaker.PlayOneShot(putdown);
             Destroy(this);
+        }
+
+        if (displayHover)
+        {
+            GUI.Label(new Rect(25, 500, 500, 25), hoverText);
         }
     }
 
@@ -57,5 +64,15 @@ public class Readable : MonoBehaviour {
         toBeBurned = true;
         speaker.PlayOneShot(pickup);
 
+    }
+
+    public void showHoverText()
+    {
+        displayHover = true;
+    }
+
+    public void hideHoverText()
+    {
+        displayHover = false;
     }
 }
