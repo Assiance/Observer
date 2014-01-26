@@ -1,0 +1,201 @@
+fileFormatVersion: 2
+guid: 10f80afa54864784e85a1e89630c52de
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Book1
+    100002: Book2
+    100004: Book3
+    100006: Book4
+    100008: Bookcase001
+    100010: Bookcase1
+    100012: Box020
+    100014: Box021
+    100016: Box022
+    100018: Box023
+    100020: Box024
+    100022: Box025
+    100024: Box026
+    100026: Box027
+    100028: ChamferBox003
+    100030: ComputerOff
+    100032: ComputerOn
+    100034: ComputerOnWallpaper
+    100036: Counter
+    100038: Crate
+    100040: DarkEarth
+    100042: Exit
+    100044: Hanging Table
+    100046: //RootNode
+    100048: Pod
+    100050: Round Table
+    100052: Table
+    100054: Wrench
+    100056: Wrench Top
+    400000: Book1
+    400002: Book2
+    400004: Book3
+    400006: Book4
+    400008: Bookcase001
+    400010: Bookcase1
+    400012: Box020
+    400014: Box021
+    400016: Box022
+    400018: Box023
+    400020: Box024
+    400022: Box025
+    400024: Box026
+    400026: Box027
+    400028: ChamferBox003
+    400030: ComputerOff
+    400032: ComputerOn
+    400034: ComputerOnWallpaper
+    400036: Counter
+    400038: Crate
+    400040: DarkEarth
+    400042: Exit
+    400044: Hanging Table
+    400046: //RootNode
+    400048: Pod
+    400050: Round Table
+    400052: Table
+    400054: Wrench
+    400056: Wrench Top
+    2300000: Book1
+    2300002: Book2
+    2300004: Book3
+    2300006: Book4
+    2300008: Bookcase001
+    2300010: Bookcase1
+    2300012: Box020
+    2300014: Box021
+    2300016: Box022
+    2300018: Box023
+    2300020: Box024
+    2300022: Box025
+    2300024: Box026
+    2300026: Box027
+    2300028: ChamferBox003
+    2300030: ComputerOff
+    2300032: ComputerOn
+    2300034: ComputerOnWallpaper
+    2300036: Counter
+    2300038: Crate
+    2300040: DarkEarth
+    2300042: Exit
+    2300044: Hanging Table
+    2300046: Pod
+    2300048: Round Table
+    2300050: Table
+    2300052: Wrench
+    2300054: Wrench Top
+    3300000: Book1
+    3300002: Book2
+    3300004: Book3
+    3300006: Book4
+    3300008: Bookcase001
+    3300010: Bookcase1
+    3300012: Box020
+    3300014: Box021
+    3300016: Box022
+    3300018: Box023
+    3300020: Box024
+    3300022: Box025
+    3300024: Box026
+    3300026: Box027
+    3300028: ChamferBox003
+    3300030: ComputerOff
+    3300032: ComputerOn
+    3300034: ComputerOnWallpaper
+    3300036: Counter
+    3300038: Crate
+    3300040: DarkEarth
+    3300042: Exit
+    3300044: Hanging Table
+    3300046: Pod
+    3300048: Round Table
+    3300050: Table
+    3300052: Wrench
+    3300054: Wrench Top
+    4300000: Bookcase1
+    4300002: Book1
+    4300004: ComputerOnWallpaper
+    4300006: Wrench
+    4300008: Wrench Top
+    4300010: Pod
+    4300012: Box020
+    4300014: ChamferBox003
+    4300016: Box021
+    4300018: Box022
+    4300020: Box023
+    4300022: Box024
+    4300024: Box025
+    4300026: Box026
+    4300028: Box027
+    4300030: Exit
+    4300032: Table
+    4300034: Round Table
+    4300036: Counter
+    4300038: DarkEarth
+    4300040: Book2
+    4300042: Book3
+    4300044: Book4
+    4300046: Hanging Table
+    4300048: ComputerOn
+    4300050: ComputerOff
+    4300052: Crate
+    4300054: Bookcase001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
