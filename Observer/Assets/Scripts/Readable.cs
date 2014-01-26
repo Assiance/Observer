@@ -3,8 +3,10 @@ using UnityEngine;
 using System.Collections;
 
 [RequireComponent(typeof(AudioSource))]
-public class Readable : MonoBehaviour
+public class Readable : VRGUI
 {
+
+    public static OVRGUI OvrGUI = new OVRGUI();
 
     public TextAsset file;
     private string text;
@@ -24,7 +26,7 @@ public class Readable : MonoBehaviour
     private Camera RightCamera;
     private const float CameraWidth = 379.5f;
 
-    void OnEnable()
+    protected new void OnEnable()
     {
         var cameras = SceneManager.Instance.PlayerOVRCamera.GetComponentsInChildren<Camera>().ToList();
         LeftCamera = cameras[0];
@@ -34,14 +36,20 @@ public class Readable : MonoBehaviour
         text = file.ToString();
         textWindow = new Rect(30,100,300,200);
         KeyboardEventManager.Instance.RegisterKeyDown(KeyCode.Escape, ExitWindow);
+        base.OnEnable();
+        if (base.guiRenderPlane != null)
+        {
+            base.guiRenderPlane.SetActive(true);
+        }
     }
 
-    void OnGUI()
+    public override void OnVRGUI()
     {
+     
         if (windowOpen)
         {
             GUI.Window(0, new Rect(100, 200,300,200), displayText, "Read Me");
-            GUI.Window(1, new Rect(100 + CameraWidth, 200, 300, 200), displayText, "Read Me");
+            //GUI.Window(1, new Rect(100 + CameraWidth, 200, 300, 200), displayText, "Read Me");
         }
 
         if (!windowOpen && toBeBurned)
@@ -52,12 +60,14 @@ public class Readable : MonoBehaviour
 
         if (displayHover)
         {
-            print(LeftCamera.camera.pixelRect);
-            print(RightCamera.camera.pixelRect);
-            GUI.Label(new Rect(140, 300, 100, 100), hoverText);
-            GUI.Label(new Rect(140 + CameraWidth, 300, 100, 100), hoverText);
+            //print(LeftCamera.camera.pixelRect);
+            //print(RightCamera.camera.pixelRect);
+            //OvrGUI.StereoDrawTexture(50, 50, .1f, .1f, RenderTexture.active, Color.white);
+            GUI.Label(new Rect(140, 30, 100, 100), hoverText);
+            //GUI.Label(new Rect(140 + CameraWidth, 300, 100, 100), hoverText);
 
         }
+        
     }
 
     void displayText(int windID)

@@ -1,0 +1,184 @@
+fileFormatVersion: 2
+guid: b1a54ae15db123a4dade5527f5990c29
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: ArmL
+    100002: ArmR
+    100004: Base Human
+    100006: Base HumanHead
+    100008: Base HumanLCollarbone
+    100010: Base HumanLForearm
+    100012: Base HumanLLeg1
+    100014: Base HumanLLeg2
+    100016: Base HumanLLegPlatform
+    100018: Base HumanLPalm
+    100020: Base HumanLUpperarm
+    100022: Base HumanNeck
+    100024: Base HumanPelvis
+    100026: Base HumanRCollarbone
+    100028: Base HumanRForearm
+    100030: Base HumanRibcage
+    100032: Base HumanRLeg1
+    100034: Base HumanRLeg2
+    100036: Base HumanRLegPlatform
+    100038: Base HumanRPalm
+    100040: Base HumanRUpperarm
+    100042: Base HumanSpine1
+    100044: Base HumanSpine2
+    100046: Chest
+    100048: FootL
+    100050: FootR
+    100052: ForearmL
+    100054: ForearmR
+    100056: HandL
+    100058: HandR
+    100060: LegL
+    100062: LegR
+    100064: Neck
+    100066: Robot_Chestpiece
+    100068: robot_Head
+    100070: //RootNode
+    100072: Spine
+    100074: Waist
+    400000: ArmL
+    400002: ArmR
+    400004: Base Human
+    400006: Base HumanHead
+    400008: Base HumanLCollarbone
+    400010: Base HumanLForearm
+    400012: Base HumanLLeg1
+    400014: Base HumanLLeg2
+    400016: Base HumanLLegPlatform
+    400018: Base HumanLPalm
+    400020: Base HumanLUpperarm
+    400022: Base HumanNeck
+    400024: Base HumanPelvis
+    400026: Base HumanRCollarbone
+    400028: Base HumanRForearm
+    400030: Base HumanRibcage
+    400032: Base HumanRLeg1
+    400034: Base HumanRLeg2
+    400036: Base HumanRLegPlatform
+    400038: Base HumanRPalm
+    400040: Base HumanRUpperarm
+    400042: Base HumanSpine1
+    400044: Base HumanSpine2
+    400046: Chest
+    400048: FootL
+    400050: FootR
+    400052: ForearmL
+    400054: ForearmR
+    400056: HandL
+    400058: HandR
+    400060: LegL
+    400062: LegR
+    400064: Neck
+    400066: Robot_Chestpiece
+    400068: robot_Head
+    400070: //RootNode
+    400072: Spine
+    400074: Waist
+    2300000: ArmL
+    2300002: ArmR
+    2300004: Chest
+    2300006: FootL
+    2300008: FootR
+    2300010: ForearmL
+    2300012: ForearmR
+    2300014: HandL
+    2300016: HandR
+    2300018: LegL
+    2300020: LegR
+    2300022: Neck
+    2300024: Robot_Chestpiece
+    2300026: robot_Head
+    2300028: Spine
+    2300030: Waist
+    3300000: ArmL
+    3300002: ArmR
+    3300004: Chest
+    3300006: FootL
+    3300008: FootR
+    3300010: ForearmL
+    3300012: ForearmR
+    3300014: HandL
+    3300016: HandR
+    3300018: LegL
+    3300020: LegR
+    3300022: Neck
+    3300024: Robot_Chestpiece
+    3300026: robot_Head
+    3300028: Spine
+    3300030: Waist
+    4300000: HandL
+    4300002: ForearmL
+    4300004: ArmL
+    4300006: HandR
+    4300008: ForearmR
+    4300010: ArmR
+    4300012: Chest
+    4300014: Robot_Chestpiece
+    4300016: robot_Head
+    4300018: Neck
+    4300020: Spine
+    4300022: Waist
+    4300024: LegL
+    4300026: FootL
+    4300028: FootR
+    4300030: LegR
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  additionalBone: 0
+  userData: 
