@@ -1,0 +1,3 @@
+The player interacts with a computer screen with an email attached.
+
+"The assembly of subject E-101 has been completed. Power output is at 100% and the ion core is stable. However the installation process has been postponed due to technical difficulties."

@@ -1,0 +1,3 @@
+The player interacts with a book about extinct animals.
+
+"Pelicans were a species of birds that were distinguished by its pouch like mouths. Pelicans would dive into pools of water and scoop up fish with its mouth."

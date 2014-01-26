@@ -1,0 +1,3 @@
+The player interacts with a book on explosions.
+
+" Many chemical explosions involve oxidation-reduction reactions—one or more components are oxidized, while one or more are reduced."

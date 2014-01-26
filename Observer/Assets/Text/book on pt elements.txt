@@ -1,0 +1,3 @@
+The user interacts with a book titled "Periodic Table: Guide to elements."
+
+" The element iron is listed as Fe and is classified as being metallic. Iron is a relatively abundant element in the universe. It is found in the sun and many types of stars in considerable quantity."
